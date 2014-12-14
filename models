@@ -1,0 +1,19 @@
+Shelf
+    hrId Text
+    length Double
+    width Double
+    height Double
+    UniqueShelf hrId
+    deriving Show
+Box
+    hrId Text
+    length Double
+    width Double
+    height Double
+    UniqueBox hrId
+    deriving Show
+Storage
+    shelfId ShelfId
+    boxId BoxId
+    UniqueStorage shelfId boxId
+    deriving Show
